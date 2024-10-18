@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+doppler run -p site -c dev -- node_modules/.bin/next "$@"

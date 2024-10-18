@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+set -oe pipefail
+
+# server.js is created by next build from the standalone output
+# https://nextjs.org/docs/pages/api-reference/next-config-js/output
+if [[ "$APP_ENV" ]] ; then
+    exec doppler run -p site -c "$APP_ENV" -- node server.js 2>&1
+else
+    exec node server.js 2>&1
+fi

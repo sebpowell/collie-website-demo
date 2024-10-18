@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "../packages/theme/variables.css";
+
+:root {
+  --container-max-width: 1400px;
+  --navigation-height: var(--space-24);
+  --background: white;
+
+  --transition-duration-default: 0.25s;
+}
+
+.bg-transparent {
+  background-color: transparent;
+}

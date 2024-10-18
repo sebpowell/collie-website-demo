@@ -1,0 +1,5 @@
+{
+    "exportDir": "src/packages/interfaces",
+    "contentFile": "export.json",
+    "downloadAssets": true
+}
