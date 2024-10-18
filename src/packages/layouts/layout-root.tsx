@@ -6,7 +6,6 @@ import { ReactNode } from "react";
 import { Inter } from "next/font/google";
 import { CookiePopup } from "@/packages/components/cookie-popup";
 import { cn } from "@/packages/utils/cn";
-import { IntercomScript } from "../components/intercom-script";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,7 +16,6 @@ const inter = Inter({
 export const LayoutRoot = ({ children }: { children: ReactNode }) => {
   return (
     <html lang="en" className={cn(inter.className, "scroll-smooth")}>
-      <IntercomScript />
       <Box as="body" className="font-body" textColor="secondary">
         <Providers>
           <Box className="flex flex-col min-h-screen">
